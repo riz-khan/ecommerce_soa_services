@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="uk.ac.bcu.soa.wcf" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="uk.ac.bcu.soa.wcf" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="uk.ac.bcu.soa.wcf/Imports">
+      <xsd:import schemaLocation="http://cmp7038-pc:8890/ORDER-SERVICE/?xsd=xsd0" namespace="uk.ac.bcu.soa.wcf" />
+      <xsd:import schemaLocation="http://cmp7038-pc:8890/ORDER-SERVICE/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://cmp7038-pc:8890/ORDER-SERVICE/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrderRegistry_AddToCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToCart" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_AddToCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_RemoveFromCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFromCart" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_RemoveFromCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveFromCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_ProcessOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_ProcessOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetAllOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrders" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetAllOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GiveFeedback_InputMessage">
+    <wsdl:part name="parameters" element="tns:GiveFeedback" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GiveFeedback_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GiveFeedbackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetAllFeedbacks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFeedbacks" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetAllFeedbacks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFeedbacksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetCartDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCartDetails" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetCartDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCartDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetCurrentCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCart" />
+  </wsdl:message>
+  <wsdl:message name="IOrderRegistry_GetCurrentCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentCartResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrderRegistry">
+    <wsdl:operation name="AddToCart">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/AddToCart" message="tns:IOrderRegistry_AddToCart_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/AddToCartResponse" message="tns:IOrderRegistry_AddToCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromCart">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/RemoveFromCart" message="tns:IOrderRegistry_RemoveFromCart_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/RemoveFromCartResponse" message="tns:IOrderRegistry_RemoveFromCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrder">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/ProcessOrder" message="tns:IOrderRegistry_ProcessOrder_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/ProcessOrderResponse" message="tns:IOrderRegistry_ProcessOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetOrder" message="tns:IOrderRegistry_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetOrderResponse" message="tns:IOrderRegistry_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllOrders">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetAllOrders" message="tns:IOrderRegistry_GetAllOrders_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetAllOrdersResponse" message="tns:IOrderRegistry_GetAllOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GiveFeedback">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GiveFeedback" message="tns:IOrderRegistry_GiveFeedback_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GiveFeedbackResponse" message="tns:IOrderRegistry_GiveFeedback_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFeedbacks">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetAllFeedbacks" message="tns:IOrderRegistry_GetAllFeedbacks_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetAllFeedbacksResponse" message="tns:IOrderRegistry_GetAllFeedbacks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCartDetails">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetCartDetails" message="tns:IOrderRegistry_GetCartDetails_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetCartDetailsResponse" message="tns:IOrderRegistry_GetCartDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentCart">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetCurrentCart" message="tns:IOrderRegistry_GetCurrentCart_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IOrderRegistry/GetCurrentCartResponse" message="tns:IOrderRegistry_GetCurrentCart_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

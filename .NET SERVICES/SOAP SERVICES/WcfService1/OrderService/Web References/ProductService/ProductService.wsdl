@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://soa.bcu.ac.uk/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ProductService" targetNamespace="http://soa.bcu.ac.uk/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8081/product?xsd=1" namespace="http://soa.bcu.ac.uk/" />
+    </xsd:schema>
+  </types>
+  <message name="getAll">
+    <part name="parameters" element="tns:getAll" />
+  </message>
+  <message name="getAllResponse">
+    <part name="parameters" element="tns:getAllResponse" />
+  </message>
+  <message name="stockIn">
+    <part name="parameters" element="tns:stockIn" />
+  </message>
+  <message name="stockInResponse">
+    <part name="parameters" element="tns:stockInResponse" />
+  </message>
+  <message name="stockOut">
+    <part name="parameters" element="tns:stockOut" />
+  </message>
+  <message name="stockOutResponse">
+    <part name="parameters" element="tns:stockOutResponse" />
+  </message>
+  <message name="checkStock">
+    <part name="parameters" element="tns:checkStock" />
+  </message>
+  <message name="checkStockResponse">
+    <part name="parameters" element="tns:checkStockResponse" />
+  </message>
+  <message name="checkStockByName">
+    <part name="parameters" element="tns:checkStockByName" />
+  </message>
+  <message name="checkStockByNameResponse">
+    <part name="parameters" element="tns:checkStockByNameResponse" />
+  </message>
+  <message name="getName">
+    <part name="parameters" element="tns:getName" />
+  </message>
+  <message name="getNameResponse">
+    <part name="parameters" element="tns:getNameResponse" />
+  </message>
+  <message name="add">
+    <part name="parameters" element="tns:add" />
+  </message>
+  <message name="addResponse">
+    <part name="parameters" element="tns:addResponse" />
+  </message>
+  <message name="get">
+    <part name="parameters" element="tns:get" />
+  </message>
+  <message name="getResponse">
+    <part name="parameters" element="tns:getResponse" />
+  </message>
+  <message name="delete">
+    <part name="parameters" element="tns:delete" />
+  </message>
+  <message name="deleteResponse">
+    <part name="parameters" element="tns:deleteResponse" />
+  </message>
+  <message name="update">
+    <part name="parameters" element="tns:update" />
+  </message>
+  <message name="updateResponse">
+    <part name="parameters" element="tns:updateResponse" />
+  </message>
+  <portType name="ProductServiceInterface">
+    <operation name="getAll">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/getAllRequest" message="tns:getAll" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/getAllResponse" message="tns:getAllResponse" />
+    </operation>
+    <operation name="stockIn">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/stockInRequest" message="tns:stockIn" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/stockInResponse" message="tns:stockInResponse" />
+    </operation>
+    <operation name="stockOut">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/stockOutRequest" message="tns:stockOut" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/stockOutResponse" message="tns:stockOutResponse" />
+    </operation>
+    <operation name="checkStock">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/checkStockRequest" message="tns:checkStock" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/checkStockResponse" message="tns:checkStockResponse" />
+    </operation>
+    <operation name="checkStockByName">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/checkStockByNameRequest" message="tns:checkStockByName" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/checkStockByNameResponse" message="tns:checkStockByNameResponse" />
+    </operation>
+    <operation name="getName">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/getNameRequest" message="tns:getName" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/getNameResponse" message="tns:getNameResponse" />
+    </operation>
+    <operation name="add">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/addRequest" message="tns:add" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/addResponse" message="tns:addResponse" />
+    </operation>
+    <operation name="get">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/getRequest" message="tns:get" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/getResponse" message="tns:getResponse" />
+    </operation>
+    <operation name="delete">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/deleteRequest" message="tns:delete" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/deleteResponse" message="tns:deleteResponse" />
+    </operation>
+    <operation name="update">
+      <input wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/updateRequest" message="tns:update" />
+      <output wsam:Action="http://soa.bcu.ac.uk/ProductServiceInterface/updateResponse" message="tns:updateResponse" />
+    </operation>
+  </portType>
+  <binding name="ProductServiceImplPortBinding" type="tns:ProductServiceInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getAll">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="stockIn">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="stockOut">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="checkStock">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="checkStockByName">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getName">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="add">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="get">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="delete">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="update">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ProductService">
+    <port name="ProductServiceImplPort" binding="tns:ProductServiceImplPortBinding">
+      <soap:address location="http://localhost:8081/product" />
+    </port>
+  </service>
+</definitions>

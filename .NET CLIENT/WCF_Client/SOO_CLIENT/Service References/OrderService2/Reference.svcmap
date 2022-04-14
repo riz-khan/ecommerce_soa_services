@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="db120e9d-4f8f-43dd-9049-5116e9a7bb61" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://cmp7038-PC:8890/ORDER-SERVICE/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="b2c3f27a-09ac-4089-835f-294c84b6bdec" SourceId="1" SourceUrl="http://cmp7038-pc:8890/ORDER-SERVICE/?wsdl=wsdl0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="167f410c-2f0a-408d-b624-a05cbc21e7a4" SourceId="1" SourceUrl="http://cmp7038-pc:8890/ORDER-SERVICE/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="56bc391b-e0a1-47a7-8eb8-da194a449214" SourceId="1" SourceUrl="http://cmp7038-pc:8890/ORDER-SERVICE/?disco" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="eb9879c7-0750-4814-871d-052016dd47c2" SourceId="1" SourceUrl="http://cmp7038-pc:8890/ORDER-SERVICE/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="885c1ab3-6659-462e-8ce4-22cb91726e54" SourceId="1" SourceUrl="http://cmp7038-pc:8890/ORDER-SERVICE/?xsd=xsd0" />
+    <MetadataFile FileName="OrderRegistry.wsdl" MetadataType="Wsdl" ID="a66d04ab-7539-4376-9423-768f80a518d9" SourceId="1" SourceUrl="http://cmp7038-pc:8890/ORDER-SERVICE/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

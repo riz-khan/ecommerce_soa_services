@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://soa.bcu.ac.uk/" targetNamespace="http://soa.bcu.ac.uk/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="add" type="tns:add" />
+  <xs:element name="addResponse" type="tns:addResponse" />
+  <xs:element name="checkStock" type="tns:checkStock" />
+  <xs:element name="checkStockByName" type="tns:checkStockByName" />
+  <xs:element name="checkStockByNameResponse" type="tns:checkStockByNameResponse" />
+  <xs:element name="checkStockResponse" type="tns:checkStockResponse" />
+  <xs:element name="delete" type="tns:delete" />
+  <xs:element name="deleteResponse" type="tns:deleteResponse" />
+  <xs:element name="get" type="tns:get" />
+  <xs:element name="getAll" type="tns:getAll" />
+  <xs:element name="getAllResponse" type="tns:getAllResponse" />
+  <xs:element name="getName" type="tns:getName" />
+  <xs:element name="getNameResponse" type="tns:getNameResponse" />
+  <xs:element name="getResponse" type="tns:getResponse" />
+  <xs:element name="stockIn" type="tns:stockIn" />
+  <xs:element name="stockInResponse" type="tns:stockInResponse" />
+  <xs:element name="stockOut" type="tns:stockOut" />
+  <xs:element name="stockOutResponse" type="tns:stockOutResponse" />
+  <xs:element name="update" type="tns:update" />
+  <xs:element name="updateResponse" type="tns:updateResponse" />
+  <xs:complexType name="update">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="product">
+    <xs:sequence>
+      <xs:element name="active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="barCode" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="price" type="xs:double" />
+      <xs:element minOccurs="0" name="quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stockIn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stockInResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="get">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkStockByName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkStockByNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAll">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delete">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stockOut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stockOutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkStock">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkStockResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="add">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

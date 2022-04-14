@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://soa.bcu.ac.uk/" targetNamespace="http://soa.bcu.ac.uk/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="addCustomer" type="tns:addCustomer" />
+  <xs:element name="addCustomerResponse" type="tns:addCustomerResponse" />
+  <xs:element name="deleteCustomer" type="tns:deleteCustomer" />
+  <xs:element name="deleteCustomerResponse" type="tns:deleteCustomerResponse" />
+  <xs:element name="getAll" type="tns:getAll" />
+  <xs:element name="getAllResponse" type="tns:getAllResponse" />
+  <xs:element name="getCustomer" type="tns:getCustomer" />
+  <xs:element name="getCustomerName" type="tns:getCustomerName" />
+  <xs:element name="getCustomerNameResponse" type="tns:getCustomerNameResponse" />
+  <xs:element name="getCustomerResponse" type="tns:getCustomerResponse" />
+  <xs:element name="updateCustomer" type="tns:updateCustomer" />
+  <xs:element name="updateCustomerResponse" type="tns:updateCustomerResponse" />
+  <xs:complexType name="getCustomerName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCustomerNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cardCvv" type="xs:string" />
+      <xs:element minOccurs="0" name="cardExpiry" type="xs:string" />
+      <xs:element minOccurs="0" name="cardName" type="xs:string" />
+      <xs:element minOccurs="0" name="cardNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="customerID" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="phone" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateCustomerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element name="success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addCustomerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAll">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteCustomerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:response" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCustomerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customer" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

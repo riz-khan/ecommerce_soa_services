@@ -1,0 +1,9 @@
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\PaymentService\bin\PaymentService.dll
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\PaymentService\bin\PaymentService.pdb
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\PaymentService\obj\Debug\PaymentService.dll
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\PaymentService\obj\Debug\PaymentService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\PaymentService\bin\PaymentService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\PaymentService\bin\PaymentService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\PaymentService\obj\Debug\PaymentService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\PaymentService\obj\Debug\PaymentService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\PaymentService\obj\Debug\PaymentService.csprojResolveAssemblyReference.cache

@@ -1,0 +1,15 @@
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\bin\Debug\SOO_CLIENT.exe.config
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\bin\Debug\SOO_CLIENT.exe
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\bin\Debug\SOO_CLIENT.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.csprojResolveAssemblyReference.cache
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.CustomerForm.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.InvoiceForm.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.LOGIN.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.OrderForm.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.PaymentForm.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.ProductForm.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.Properties.Resources.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.SERVICE_ORCHESTRATION.resources
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.csproj.GenerateResource.Cache
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.exe
+C:\CMP7174_Workspace\Dot_Net_Services\WCF_Client\SOO_CLIENT\obj\Debug\SOO_CLIENT.pdb

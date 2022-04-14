@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="00ec5fe9-ce41-47e2-a746-974d974f0bda" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://cmp7038-PC:8889/INVOICE-SERVICE/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InvoiceRegistry.wsdl" MetadataType="Wsdl" ID="aa574872-9c2d-4a91-bf8f-7819fdbda4f1" SourceId="1" SourceUrl="http://cmp7038-pc:8889/INVOICE-SERVICE/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="0b18ea5d-d3aa-4b48-8803-9616a0ff4751" SourceId="1" SourceUrl="http://cmp7038-pc:8889/INVOICE-SERVICE/?disco" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="47e1bcc9-42af-41fc-bbd0-87960ba55f9b" SourceId="1" SourceUrl="http://cmp7038-pc:8889/INVOICE-SERVICE/?wsdl=wsdl0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="74469c4e-79c3-4278-ab3c-345466ffd2bf" SourceId="1" SourceUrl="http://cmp7038-pc:8889/INVOICE-SERVICE/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="cdd87be2-5919-4af2-b507-5e5addc42f8e" SourceId="1" SourceUrl="http://cmp7038-pc:8889/INVOICE-SERVICE/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

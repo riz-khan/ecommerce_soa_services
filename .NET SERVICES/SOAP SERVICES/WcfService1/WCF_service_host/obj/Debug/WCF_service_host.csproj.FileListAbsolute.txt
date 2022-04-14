@@ -1,0 +1,10 @@
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\WCF_service_host.exe.config
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\WCF_service_host.exe
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\WCF_service_host.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\InvoiceService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\OrderService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\InvoiceService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\bin\Debug\OrderService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\obj\Debug\WCF_service_host.csprojResolveAssemblyReference.cache
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\obj\Debug\WCF_service_host.exe
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\WCF_service_host\obj\Debug\WCF_service_host.pdb

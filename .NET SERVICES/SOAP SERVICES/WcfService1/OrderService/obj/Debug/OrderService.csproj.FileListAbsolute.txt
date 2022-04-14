@@ -1,0 +1,4 @@
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\OrderService\bin\OrderService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\OrderService\bin\OrderService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\OrderService\obj\Debug\OrderService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\WcfService1\OrderService\obj\Debug\OrderService.pdb

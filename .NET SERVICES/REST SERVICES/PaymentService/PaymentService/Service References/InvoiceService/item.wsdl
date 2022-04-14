@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="uk.ac.bcu.soa.wcf" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="uk.ac.bcu.soa.wcf" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="uk.ac.bcu.soa.wcf/Imports">
+      <xsd:import schemaLocation="http://cmp7038-pc:8889/INVOICE-SERVICE/?xsd=xsd0" namespace="uk.ac.bcu.soa.wcf" />
+      <xsd:import schemaLocation="http://cmp7038-pc:8889/INVOICE-SERVICE/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInvoiceRegistry_GenerateInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IInvoiceRegistry_GenerateInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInvoiceRegistry_GetInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IInvoiceRegistry_GetInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInvoiceRegistry_GetAllInvoices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllInvoices" />
+  </wsdl:message>
+  <wsdl:message name="IInvoiceRegistry_GetAllInvoices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllInvoicesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInvoiceRegistry">
+    <wsdl:operation name="GenerateInvoice">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IInvoiceRegistry/GenerateInvoice" message="tns:IInvoiceRegistry_GenerateInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IInvoiceRegistry/GenerateInvoiceResponse" message="tns:IInvoiceRegistry_GenerateInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoice">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IInvoiceRegistry/GetInvoice" message="tns:IInvoiceRegistry_GetInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IInvoiceRegistry/GetInvoiceResponse" message="tns:IInvoiceRegistry_GetInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInvoices">
+      <wsdl:input wsaw:Action="uk.ac.bcu.soa.wcf/IInvoiceRegistry/GetAllInvoices" message="tns:IInvoiceRegistry_GetAllInvoices_InputMessage" />
+      <wsdl:output wsaw:Action="uk.ac.bcu.soa.wcf/IInvoiceRegistry/GetAllInvoicesResponse" message="tns:IInvoiceRegistry_GetAllInvoices_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

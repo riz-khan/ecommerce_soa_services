@@ -1,0 +1,16 @@
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\bin\Debug\REST_service_host.exe.config
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\bin\Debug\REST_service_host.exe
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\bin\Debug\REST_service_host.pdb
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\bin\Debug\PaymentService.dll
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\bin\Debug\PaymentService.pdb
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\obj\Debug\REST_service_host.csprojResolveAssemblyReference.cache
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\obj\Debug\REST_service_host.exe
+C:\Users\CMP7174User\Documents\Visual Studio 2012\Projects\PaymentService\REST_service_host\obj\Debug\REST_service_host.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\bin\Debug\REST_service_host.exe.config
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\bin\Debug\REST_service_host.exe
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\bin\Debug\REST_service_host.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\bin\Debug\PaymentService.dll
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\bin\Debug\PaymentService.pdb
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\obj\Debug\REST_service_host.csprojResolveAssemblyReference.cache
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\obj\Debug\REST_service_host.exe
+C:\CMP7174_Workspace\Dot_Net_Services\PaymentService\REST_service_host\obj\Debug\REST_service_host.pdb
